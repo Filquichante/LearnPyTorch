@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def classification_training_loop(model, X_train, y_train, X_test, y_test, loss_fn=nn.CrossEntropyLoss(), optimizer=torch.optim.SGD(), activation_function=nn.sigmoid(), epochs=1000):
     from torchmetrics import Accuracy_fn as accuracy
     """
-    Args : model(Model to train), loss_fn(the loss function), optimizer, dataset, epochs(default=1000)
+    Args : model(Model to train), loss_fn(the loss function), optimizer, dataset(X_train, y_train, X_test, y_test), epochs(default=1000)
     My loop to train models without having to rewrite everything everytime
     Haha I'm so smart
     """
