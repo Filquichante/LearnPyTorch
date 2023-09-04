@@ -3,7 +3,7 @@ from torch import nn
 import numpy as np
 import matplotlib.pyplot as plt
 
-def classification_training_loop(model, optimizer, X_train, y_train, X_test, y_test, loss_fn=nn.CrossEntropyLoss(), activation_function=nn.sigmoid(), epochs=1000):
+def classification_training_loop(model, optimizer, X_train, y_train, X_test, y_test, loss_fn=nn.CrossEntropyLoss(), activation_function=nn.Sigmoid(), epochs=1000):
     from torchmetrics import Accuracy_fn as accuracy
     """
     Args : model(Model to train), loss_fn(the loss function), optimizer, dataset(X_train, y_train, X_test, y_test), epochs(default=1000)
